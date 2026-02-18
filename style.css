@@ -493,12 +493,16 @@
 
         /* КЛАВИШНАЯ ПОДСКАЗКА */
         .key-hint {
+            line-height: 1.6;
             position: fixed;
             bottom: 20px;
             left: 50%;
             transform: translateX(-50%);
             font-size: 11px;
-            color: #4a2a0a;
+            color: #683a0c;
             letter-spacing: 2px;
             z-index: 100;
+        }
+        .footer-hiden { 
+            color: #4a2a0a;
         }
