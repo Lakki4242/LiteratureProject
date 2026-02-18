@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Преступление и наказание — Лужин и Соня</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- НАВИГАЦИЯ -->
+<nav class="nav">
+    <div class="nav-title">Ф.М. Достоевский · Преступление и наказание</div>
+    <div class="nav-controls">
+        <button class="nav-btn" id="prevBtn" onclick="changeSlide(-1)">← Назад</button>
+        <span class="slide-counter" id="counter">1 / 10</span>
+        <button class="nav-btn" id="nextBtn" onclick="changeSlide(1)">Вперёд →</button>
+    </div>
+</nav>
+
+<!-- ИНДИКАТОРЫ -->
+<div class="indicators" id="indicators"></div>
+
+<!-- ПРОГРЕСС -->
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- ПОДСКАЗКА -->
+<div class="key-hint">
+   <p>← → для навигации · ПРОБЕЛ — следующий слайд</p> 
+   <p>Учавствовали в разработке проекта:</p>
+   <p>Айдамир Байтелов - Лучший человек</p>
+   <p>Медеу Нурали - лодырь 1</p>
+   <p>Тен София - Лодырь 2</p>
+   <p>Илья - мимо проходил, как то получилось что с сайтом помог</p>
+</div>
+
+<!-- СЛАЙДЫ -->
+<div class="slides-wrapper">
+
+    <!-- СЛАЙД 0: ТИТУЛ -->
+    <div class="slide slide-title active" data-index="0">
+        <div class="title-ornament">✦ ✦ ✦</div>
+        <div class="title-sub">Ф.М. Достоевский · 1866</div>
+        <div class="title-divider"></div>
+        <div class="title-main">
+            Почему Лужину надо было подставлять Соню<br>и как это связано с Дуней
+        </div>
+        <div class="title-divider"></div>
+        <div style="font-size:14px; color:#8b6a4a; letter-spacing:2px; margin-top:20px;">
+            По роману «Преступление и наказание»
+        </div>
+        <div style="margin-top:40px; font-size:13px; color:#5a3a1a; letter-spacing:1px; font-style:italic;">
+            Три части · Десять слайдов
+        </div>
+    </div>
+
+    <!-- СЛАЙД 1: ЧАСТЬ 1 — ПОРТРЕТ -->
+    <div class="slide slide-content" data-index="1">
+        <div class="part-badge">Часть I · Слайд 1</div>
+        <div class="slide-heading">Портрет Лужина: человек-расчёт</div>
+        <div class="slide-body">
+            <div class="text-block">
+                Пётр Петрович Лужин — надворный советник, жених Дуни Раскольниковой. 
+                С первых страниц Достоевский изображает его как человека, у которого 
+                <span class="highlight">всё подчинено выгоде и холодному расчёту</span>.
+            </div>
+            <div class="quote-block">
+                <div class="quote-text">
+                    «Он принадлежал к тем людям, по-видимому весьма добродетельным, которые горячо желают 
+                    сделать добро и которые на самом деле делают только зло»
+                </div>
+                <div class="quote-source">Часть 2, глава 5 — авторская характеристика</div>
+            </div>
+            <div class="text-block">
+                Ключевая черта Лужина — его знаменитая 
+                <span class="highlight">«теория целого кафтана»</span>:
+            </div>
+            <div class="quote-block">
+                <div class="quote-text">
+                    «Возлюби, прежде всего, одного себя, ибо всё на свете на личном интересе основано. 
+                    Возлюбишь одного себя, то и дела свои обделаешь как следует, и кафтан твой останется цел»
+                </div>
+                <div class="quote-source">Часть 2, глава 5</div>
+            </div>
+            <div class="text-block">
+                Эта философия — <span class="highlight">нравственное обоснование всех его злодеяний</span>. 
+                Лужин искренне убеждён, что эгоизм есть добродетель, а значит любое действие 
+                во имя личного интереса оправдано.
+            </div>
+        </div>
+    </div>
+
+    <!-- СЛАЙД 2: МОТИВ ЖЕНИТЬБЫ -->
+    <div class="slide slide-content" data-index="2">
+        <div class="part-badge">Часть I · Слайд 2</div>
+        <div class="slide-heading">Что Лужин хотел получить от брака с Дуней</div>
+        <div class="slide-body">
+            <div class="text-block">
+                Мотив сватовства Лужина к Дуне Достоевский раскрывает с ледяной ясностью:
+            </div>
+            <div class="quote-block">
+                <div class="quote-text">
+                    «Он уже несколько времени обдумывал свою женитьбу... Он мечтал о добродетельной 
+                    и бедной девушке — непременно бедной — такой, которая бы много испытала... 
+                    потому что бедность воспитывает в человеке привычку к послушанию»
+                </div>
+                <div class="quote-source">Часть 2, глава 5</div>
+            </div>
+            <div class="quote-block">
+                <div class="quote-text">
+                    «Она будет смотреть на него как на благодетеля своего... 
+                    Он же будет владычествовать над ней нераздельно и безгранично»
+                </div>
+                <div class="quote-source">Часть 2, глава 5</div>
+            </div>
+            <div class="two-col">
+                <div class="col-block">
+                    <div class="col-title">Что Лужин видел в Дуне</div>
+                    <div class="col-text">
+                        Не любимую женщину, а <strong style="color:#c8923a">инструмент власти</strong>. 
+                        Бедная, из обесславленной семьи, без связей — такая жена 
+                        никуда не денется и будет навсегда зависима.
+                    </div>
+                </div>
+                <div class="col-block">
+                    <div class="col-title">Реакция Раскольникова</div>
+                    <div class="col-text">
+                        «Ясно, как день, что тут дело в Дуне самой — и что она, 
+                        может быть, сама же и смотрит на это как на долг»
+                        <span style="display:block;margin-top:5px;font-size:11px;color:#8b6a4a">Часть 1, глава 4</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- СЛАЙД 3: КОНФЛИКТ И РАЗРЫВ -->
+    <div class="slide slide-content" data-index="3">
+        <div class="part-badge">Часть I · Слайд 3</div>
+        <div class="slide-heading">Первое столкновение и разрыв помолвки</div>
+        <div class="slide-body">
+            <div class="text-block">
+                Раскольников с самого начала видит Лужина насквозь и открыто враждебен к нему. 
+                Кульминация — <span class="highlight">сцена разрыва помолвки</span> (Часть 4, глава 2), 
+                когда Дуня окончательно прозревает:
+            </div>
+            <div class="quote-block">
+                <div class="quote-text">
+                    «— Я вижу теперь ясно, что я вас никогда не любила... Уходите, Пётр Петрович»
+                </div>
+                <div class="quote-source">Часть 4, глава 2 — слова Дуни</div>
+            </div>
+            <div class="text-block">Лужин пытается шантажировать до последнего:</div>
+            <div class="quote-block">
+                <div class="quote-text">
+                    «— Помните, Авдотья Романовна... что вы делаете. Другого такого случая не будет»
+                </div>
+                <div class="quote-source">Часть 4, глава 2</div>
+            </div>
+            <div class="text-block">
+                Но Дуня непреклонна. И именно <span class="highlight">это унижение</span> — 
+                быть публично отвергнутым при матери и сестре — запускает в Лужине 
+                механизм холодной мести. Именно отсюда вырастает подстава Сони.
+            </div>
+            <div class="quote-block">
+                <div class="quote-text">
+                    «Пётр Петрович вышел, унося в душе своей злобу и бессильную ярость... 
+                    Он мечтал о мщении»
+                </div>
+                <div class="quote-source">Часть 4, глава 3 — авторский комментарий</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- СЛАЙД 4: ПЕРЕХОДНЫЙ — ЧАСТЬ 2 -->
+    <div class="slide slide-title" data-index="4">
+        <div class="title-ornament">✦</div>
+        <div class="title-sub" style="font-size:12px; letter-spacing:4px;">Часть вторая</div>
+        <div class="title-divider"></div>
+        <div class="title-main" style="font-size:24px;">
+            Механизм подставы
+        </div>
+        <div style="font-size:15px; color:#8b6a4a; margin-top:15px; font-style:italic;">
+            Зачем Лужин подбросил деньги Соне
+        </div>
+        <div class="title-divider"></div>
+        <div style="font-size:13px; color:#5a3a1a; letter-spacing:2px; margin-top:20px;">
+            Часть 5, глава 3 романа
+        </div>
+    </div>
+
+    <!-- СЛАЙД 5: СЦЕНА ОБВИНЕНИЯ -->
+    <div class="slide slide-content" data-index="5">
+        <div class="part-badge">Часть II · Слайд 5</div>
+        <div class="slide-heading">Сцена обвинения Сони: разбор по тексту</div>
+        <div class="slide-body">
+            <div class="text-block">
+                На поминках по Мармеладову Лужин публично обвиняет Соню в краже ста рублей:
+            </div>
+            <div class="quote-block">
+                <div class="quote-text">
+                    «— Позвольте-с... Когда вы сейчас проходили мимо меня... я заметил, 
+                    как вы... нечаянно опустили в карман сторублёвую кредитную бумажку, 
+                    которую я давеча вам вручил»
+                </div>
+                <div class="quote-source">Часть 5, глава 3</div>
+            </div>
+            <div class="text-block">
+                Разоблачение происходит благодаря Лебезятникову — случайному свидетелю:
+            </div>
+            <div class="quote-block">
+                <div class="quote-text">
+                    «Я видел, я видел! — кричал Лебезятников. — Хоть и против принципов моих 
+                    свидетельствовать... но я видел, как вы сами подложили ей в карман, 
+                    тогда как она не замечала!»
+                </div>
+                <div class="quote-source">Часть 5, глава 3</div>
+            </div>
+            <div class="text-block">
+                Реакция Лужина на разоблачение:
+            </div>
+            <div class="quote-block">
+                <div class="quote-text">
+                    «Лужин побледнел и закусил губу. Он был совершенно сражён»
+                </div>
+                <div class="quote-source">Часть 5, глава 3</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- СЛАЙД 6: ТРИ ПРИЧИНЫ -->
+    <div class="slide slide-content" data-index="6">
+        <div class="part-badge">Часть II · Слайд 6</div>
+        <div class="slide-heading">Три причины, почему Лужин выбрал именно Соню</div>
+        <div class="slide-body">
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-number">1</div>
+                    <div class="card-title">Уязвимость жертвы</div>
+                    <div class="card-text">
+                        Соня — обладательница «жёлтого билета», официально зарегистрированная 
+                        проститутка. В глазах общества XIX века её слово ничего не стоит. 
+                        Лужин рассчитывал, что никто не встанет на её защиту.
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-number">2</div>
+                    <div class="card-title">Удар по Раскольникову</div>
+                    <div class="card-text">
+                        Лужин знает о близости Сони и Раскольникова. Уничтожить Соню — 
+                        значит уничтожить нравственную опору Родиона. Раскольников реагирует 
+                        мгновенно и лично, как на личное оскорбление.
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-number">3</div>
+                    <div class="card-title">Вернуть Дуню</div>
+                    <div class="card-text">
+                        Главная и скрытая цель: дискредитировав окружение Раскольникова, 
+                        сломить опору Дуни и вынудить её вернуться. Это — 
+                        истинный мотив всей операции.
+                    </div>
+                </div>
+            </div>
+            <div class="quote-block" style="margin-top:10px;">
+                <div class="quote-text">
+                    «Раскольников стоял и молча наблюдал... 
+                    и вдруг что-то как будто подрезало его»
+                </div>
+                <div class="quote-source">Часть 5, глава 3 — реакция Раскольникова</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- СЛАЙД 7: ПЕРЕХОДНЫЙ — ЧАСТЬ 3 -->
+    <div class="slide slide-title" data-index="7">
+        <div class="title-ornament">✦</div>
+        <div class="title-sub" style="font-size:12px; letter-spacing:4px;">Часть третья</div>
+        <div class="title-divider"></div>
+        <div class="title-main" style="font-size:24px;">
+            Связь подставы с Дуней
+        </div>
+        <div style="font-size:15px; color:#8b6a4a; margin-top:15px; font-style:italic;">
+            Истинный мотив Лужина
+        </div>
+        <div class="title-divider"></div>
+        <div style="font-size:13px; color:#5a3a1a; letter-spacing:2px; margin-top:20px;">
+            Дуня и Соня как зеркальные образы
+        </div>
+    </div>
+
+    <!-- СЛАЙД 8: ЛОГИКА МЕСТИ -->
+    <div class="slide slide-content" data-index="8">
+        <div class="part-badge">Часть III · Слайд 8</div>
+        <div class="slide-heading">Логика мести: как подстава должна была вернуть Дуню</div>
+        <div class="slide-body">
+            <div class="text-block">
+                Лужин действует по жёсткой трёхступенчатой схеме:
+            </div>
+            <div class="scheme">
+                <div class="scheme-step">Дискредитировать Соню — показать её воровкой</div>
+                <div class="scheme-arrow">→</div>
+                <div class="scheme-step">Дискредитировать Раскольникова — он дружит с уголовницей</div>
+                <div class="scheme-arrow">→</div>
+                <div class="scheme-step">Дуня разочаруется в брате и вернётся к Лужину</div>
+            </div>
+            <div class="text-block">
+                Достоевский прямо указывает на этот замысел — накануне сцены с обвинением:
+            </div>
+            <div class="quote-block">
+                <div class="quote-text">
+                    «Если б удалось доказать Дуне, что Раскольников водится с такими людьми... 
+                    то, пожалуй бы, его партия ещё не была проиграна»
+                </div>
+                <div class="quote-source">Часть 5, глава 1 — размышления Лужина накануне подставы</div>
+            </div>
+            <div class="text-block">
+                Это <span class="highlight">прямое авторское указание</span>: подстава Сони 
+                задумана как инструмент давления на Дуню. Соня — лишь средство. 
+                Цель — <span class="highlight">Дуня и власть над ней</span>.
+            </div>
+        </div>
+    </div>
+
+    <!-- СЛАЙД 9: ЗЕРКАЛЬНЫЕ ОБРАЗЫ И ИТОГ -->
+    <div class="slide slide-content" data-index="9">
+        <div class="part-badge">Часть III · Слайд 9</div>
+        <div class="slide-heading">Дуня и Соня: зеркальные образы · Итог</div>
+        <div class="slide-body">
+            <div class="text-block">
+                Достоевский выстраивает глубокую параллель между двумя женщинами — 
+                и Лужин использует <span class="highlight">обеих по одной схеме</span>:
+            </div>
+            <table class="comparison-table">
+                <tr>
+                    <th>Дуня</th>
+                    <th>Соня</th>
+                </tr>
+                <tr>
+                    <td>Жертвует собой ради брата (брак с Лужиным)</td>
+                    <td>Жертвует собой ради семьи (жёлтый билет)</td>
+                </tr>
+                <tr>
+                    <td>Под угрозой морального уничтожения через Лужина</td>
+                    <td>Под угрозой уголовного обвинения от Лужина</td>
+                </tr>
+                <tr>
+                    <td>Уязвимость — бедность и зависимость</td>
+                    <td>Уязвимость — социальный статус</td>
+                </tr>
+            </table>
+            <div class="text-block" style="margin-top:10px;">
+                Три уровня мотива Лужина:
+            </div>
+            <table class="result-table">
+                <tr>
+                    <th>Уровень</th>
+                    <th>Мотив</th>
+                </tr>
+                <tr>
+                    <td><span class="level-badge">Поверхностный</span></td>
+                    <td>Уничтожить Соню как нежелательного человека</td>
+                </tr>
+                <tr>
+                    <td><span class="level-badge">Средний</span></td>
+                    <td>Ударить по Раскольникову через его близких</td>
+                </tr>
+                <tr>
+                    <td><span class="level-badge">Глубинный</span></td>
+                    <td>Вернуть власть над Дуней, сломив её нравственную опору</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- СЛАЙД ФИНАЛЬНЫЙ -->
+    <div class="slide slide-final" data-index="10">
+        <div class="final-quote">
+            <div class="final-ornament">✦</div>
+            <div class="title-sub">Вывод</div>
+            <div class="title-divider"></div>
+            <div style="font-size:16px; color:#d4c4a8; line-height:1.9; margin-bottom:30px; font-style:italic;">
+                Лужин — воплощение того, что Достоевский считал 
+                <span class="highlight">самым опасным злом</span>: не страстного преступника, 
+                как Раскольников, а холодного, расчётливого манипулятора, 
+                для которого люди — фигуры в игре.
+            </div>
+            <div class="title-divider"></div>
+            <div class="quote-block" style="text-align:left; margin-top:25px;">
+                <div class="quote-text">
+                    Зло, основанное на расчёте, неизбежно просчитывается — 
+                    Лужин не учёл, что у Сони найдётся свидетель, 
+                    что Раскольников встанет на её защиту, 
+                    что его «теория кафтана» разбивается о живую человеческую солидарность.
+                </div>
+                <div class="quote-source">Авторская идея романа</div>
+            </div>
+            <div style="margin-top:30px; font-size:12px; color:#4a2a0a; letter-spacing:3px; text-transform:uppercase;">
+                Ф.М. Достоевский · Преступление и наказание · 1866
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
